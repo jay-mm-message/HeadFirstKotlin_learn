@@ -13,7 +13,8 @@ class MainActivity : AppCompatActivity() {
 
         //p()
         //p1()
-        p2()
+        //p2()
+        p3()
     }
 
     private fun p() {
@@ -36,5 +37,17 @@ class MainActivity : AppCompatActivity() {
         if (x2 < y2) {
             Log.e(TAG, "$x2 < $y2")
         }
+    }
+
+    private fun p3() {
+        val x3 = 1
+        val y3 = 2
+
+        if (x3 < y3) {
+            Log.e(TAG, "$x3 < $y3")
+        } else {
+            Log.e(TAG, "$x3 > $y3")
+        }
+        Log.e(TAG, "This line runs no matter what")
     }
  }
