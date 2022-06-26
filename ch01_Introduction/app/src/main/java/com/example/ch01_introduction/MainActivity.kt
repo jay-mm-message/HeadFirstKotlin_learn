@@ -6,26 +6,35 @@ import android.util.Log
 
 class MainActivity : AppCompatActivity() {
 
-    var TAG: String = "ch01_Introduction";
+    private var TAG: String = "ch01_Introduction"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         //p()
-        p1()
+        //p1()
+        p2()
     }
 
-    fun p() {
+    private fun p() {
         Log.e(TAG, "POW!")
     }
 
-    fun p1() {
-        var x = 1
-        Log.e(TAG,"Before the loop. x = ${x}")
-        while( x < 4) {
-            Log.e(TAG,"In the loop. x = ${x}")
-            x = x + 1
+    private fun p1() {
+        var x1 = 1
+        Log.e(TAG,"Before the loop. x = $x1")
+        while( x1 < 4) {
+            Log.e(TAG,"In the loop. x = $x1")
+            x1 += 1
         }
-        Log.e(TAG, "After the loop. x = ${x}")
+        Log.e(TAG, "After the loop. x = $x1")
+    }
+
+    private fun p2() {
+        val x2 = 3
+        val y2 = 4
+        if (x2 < y2) {
+            Log.e(TAG, "$x2 < $y2")
+        }
     }
  }
